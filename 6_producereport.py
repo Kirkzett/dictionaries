@@ -207,3 +207,13 @@ ProduceDictionary={
     }
 }
 
+
+
+
+for veg, detial in ProduceDictionary.items():
+    total = round(detial['cost'] * detial['amt_sold'],2)
+    if round(detial['total'],2) != round(total,2):
+        print(f'produce name: {veg}')
+        print(f'Calculated total: {total}')
+        print(f'Stated Total: {detial["total"]}\n')
+
